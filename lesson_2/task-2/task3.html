@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Задача-3</h1>
+	<p>З клавіатури вводяться вартість одиниці та кількість одиниць двох товарів. Вивести на екран вартість кожного з
+		видів товарів окремо і загальну вартість.</p>
+	<script>
+		let priceProductWine = parseFloat(prompt('Вартіть за одну бутилку вина', '0'));
+		let quanProductWine = parseFloat(prompt('К-сть бутилок вина', '0'));
+		let priceProductJuice = parseFloat(prompt('Вартіть за одину бутилку соку', '0'));
+		let quanProductJuice = parseFloat(prompt('К-сть бутилок соку', '0'));
+		let totalPriceWine = Math.floor(priceProductWine * quanProductWine)
+		let totalPriceJuice = Math.floor(priceProductJuice * quanProductJuice)
+		let totalPrice = Math.floor(totalPriceWine + totalPriceJuice)
+		document.write(`Вартість за вино = ${totalPriceWine}грн <br> Вартість за сік = ${totalPriceJuice}грн <br> Вартість за весь товар = ${totalPrice}грн`)
+	</script>
+</body>
+
+</html>

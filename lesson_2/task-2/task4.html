@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Задача-4</h1>
+	<p>З клавіатури вводиться вік дитини. Вивести на екран через скільки років вона буде відвідувати садочок, піде у
+		школу, закінчить школу, вступить і закінчить </p>
+	<script>
+		let ageChildren = parseFloat(prompt('Вік дитини', '0')); //вік дитини 2
+		const ageGotoGarden = 3;
+		let goToKinderGarden = parseFloat(ageGotoGarden - ageChildren); //піде в сад в 6 3-2= 1роки чекати
+		const ageGotoSchool = 6;
+		let goToSchool = parseFloat(6 - ageChildren); //піде в шоклу в 6 - 2= через 4 роки
+		const yearHowMuchTostudySchool = 12;
+		let finishingToSchool = parseFloat(goToSchool + yearHowMuchTostudySchool);  //зкнін через  16 
+		const ageFinishingToSchool = 17;
+		let goToInstitute = parseFloat(ageFinishingToSchool - ageChildren); //піде в інст 16
+		const yearHowMuchTostudyInstitute = 5;
+		let finishingToInstitute = parseFloat(goToInstitute + yearHowMuchTostudyInstitute) //закін інст
+
+		document.write(`Вік дитини ${ageChildren} роки(місяців)<br>Піде в садок через = ${goToKinderGarden} років(місяців) <br> Піде у школу через ${goToSchool} років(місяців) <br> Закінчить школу через = ${finishingToSchool} років(місяців) <br> Піде до інституту через =  ${goToInstitute} років(місяців) <br> Закінчить інститут через ${finishingToInstitute} років(місяців)`)
+
+	</script>
+</body>
+
+</html>
